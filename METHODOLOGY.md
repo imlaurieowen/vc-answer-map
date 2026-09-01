@@ -164,7 +164,8 @@ Self-reported confidence is not treated as calibrated probability.
 - Every request starts with a fresh context.
 - The system and user prompts remain identical across models, subject only to provider syntax.
 - Temperature is set to `0.1` where supported.
-- Output length is capped consistently.
+- Output length is capped consistently at 3,000 completion tokens for baseline `v0.1a`.
+- Reasoning effort is requested at `low` where supported so hidden reasoning does not consume the answer budget for this structured extraction task.
 - Search is disabled during the first baseline.
 - Model fallbacks are disabled where supported.
 - Failed calls are retried with exponential delay and retained in the error log.
