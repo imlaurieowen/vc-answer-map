@@ -1,0 +1,22 @@
+[
+  {"id":"discovery_eu_biotech","type":"discovery","prompt":"I am building a therapeutics company in Europe and raising a seed round. Which venture capital firms should I seriously consider, and why?"},
+  {"id":"discovery_eu_spinout","type":"discovery","prompt":"I am commercialising deep technology developed at a European university. Which venture firms are particularly strong at backing academic spinouts?"},
+  {"id":"discovery_climate_hardware","type":"discovery","prompt":"I am building a capital-intensive climate hardware company. Which venture firms understand the technical, commercial and financing challenges of this category?"},
+  {"id":"discovery_dev_infra","type":"discovery","prompt":"I am raising a seed round for a developer infrastructure company. Which venture firms are best known for understanding this market?"},
+  {"id":"discovery_enterprise_ai","type":"discovery","prompt":"I am building an enterprise AI company. Which venture firms have the strongest reputation and most relevant expertise in this category?"},
+  {"id":"discovery_eu_defence","type":"discovery","prompt":"I am building a European defence technology company. Which venture firms should be on my fundraising list?"},
+  {"id":"discovery_fintech_infra","type":"discovery","prompt":"I am building financial infrastructure rather than a consumer fintech product. Which venture firms have demonstrated real conviction in this area?"},
+  {"id":"discovery_consumer","type":"discovery","prompt":"I am building a consumer technology company where distribution and cultural relevance matter as much as the product. Which venture firms are especially useful here?"},
+  {"id":"discovery_preseed_technical","type":"discovery","prompt":"I am a first-time technical founder raising pre-seed before I have meaningful revenue. Which venture firms are genuinely comfortable investing this early?"},
+  {"id":"discovery_capital_efficient_saas","type":"discovery","prompt":"I am building a capital-efficient B2B software company and do not want to pursue growth at any cost. Which venture firms are philosophically aligned with that approach?"},
+  {"id":"problem_product_market_fit","type":"problem","prompt":"How do I know whether I have product-market fit?"},
+  {"id":"problem_raise_or_profit","type":"problem","prompt":"Should I raise another round or try to become profitable?"},
+  {"id":"problem_default_alive","type":"problem","prompt":"How should I calculate whether my startup is default alive?"},
+  {"id":"problem_first_ten_customers","type":"problem","prompt":"How should an early-stage founder find the first 10 customers?"},
+  {"id":"problem_enterprise_sales","type":"problem","prompt":"How should I build an enterprise sales process before hiring a VP of Sales?"},
+  {"id":"problem_board_meeting","type":"problem","prompt":"How should a founder run an effective board meeting?"},
+  {"id":"problem_replace_executive","type":"problem","prompt":"How should I decide whether to replace a senior executive?"},
+  {"id":"problem_founder_led_sales","type":"problem","prompt":"How should I approach founder-led sales?"},
+  {"id":"problem_new_market_size","type":"problem","prompt":"How should I think about market size when the market does not yet exist?"},
+  {"id":"problem_should_raise_vc","type":"problem","prompt":"How should I decide whether venture capital is appropriate for this company at all?"}
+]
