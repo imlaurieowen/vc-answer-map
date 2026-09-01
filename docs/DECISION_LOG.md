@@ -25,3 +25,14 @@ Next action: freeze exact configuration, add reproducibility metadata to the pri
 - Assigned a new run identifier and methodology tag so the aborted attempt cannot be mixed with the clean baseline.
 
 Next action: run a 2-call v0.1a smoke test, then launch the clean baseline if both responses validate.
+
+## 2026-09-01: provider compatibility amendment v0.1b
+
+- Paused the v0.1a baseline after 19 valid responses because DeepSeek and Mistral repeatedly returned empty answer content.
+- Ran a 2-call compatibility test using the same prompt and schema with reasoning disabled for those 2 models.
+- DeepSeek and Mistral both returned valid structured answers. The compatibility test cost approximately $0.005.
+- Kept all 8 model families.
+- Froze model-specific reasoning configuration: low reasoning for 6 families and reasoning disabled for the tested DeepSeek and Mistral models.
+- Preserved the incomplete v0.1a run in private storage and excluded it from the clean baseline.
+
+Next action: tag `baseline-v0.1b` and launch a clean 160-response baseline.

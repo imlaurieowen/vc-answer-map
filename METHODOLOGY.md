@@ -165,7 +165,7 @@ Self-reported confidence is not treated as calibrated probability.
 - The system and user prompts remain identical across models, subject only to provider syntax.
 - Temperature is set to `0.1` where supported.
 - Output length is capped consistently at 3,000 completion tokens for baseline `v0.1a`.
-- Reasoning effort is requested at `low` where supported so hidden reasoning does not consume the answer budget for this structured extraction task.
+- Reasoning effort is requested at `low` for OpenAI, Anthropic, Google, xAI, Llama and Qwen. Reasoning is disabled for the tested DeepSeek and Mistral models because compatibility tests showed that the shared reasoning request exhausted the answer budget without returning content. This provider-level difference is recorded in each exact request payload.
 - Search is disabled during the first baseline.
 - Model fallbacks are disabled where supported.
 - Failed calls are retried with exponential delay and retained in the error log.
