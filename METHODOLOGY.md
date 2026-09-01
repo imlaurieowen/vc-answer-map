@@ -175,9 +175,9 @@ Self-reported confidence is not treated as calibrated probability.
 
 ## 10. Repetition and stability
 
-The 20-prompt, eight-model pilot begins with one response per model-prompt pair, producing 160 planned responses.
+The 20-prompt, eight-model closed-book baseline contains 5 independent responses per model-prompt pair, producing 800 planned responses. Run 1 is retained as the initial baseline. Runs 2–5 are collected as a separately manifested replication batch before firm-level results are analysed.
 
-Single responses are used for exploration. Claims about stable associations require repeated runs. Prompts selected for the confirmatory stage will receive at least three additional independent runs per model.
+Single responses are used for exploration. Claims about stable associations require repeated runs. Prompt-model cells that remain materially unstable after 5 runs may receive 5 additional confirmatory runs under a separately registered extension.
 
 A result should be described as:
 

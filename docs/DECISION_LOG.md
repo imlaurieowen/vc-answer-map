@@ -36,3 +36,14 @@ Next action: run a 2-call v0.1a smoke test, then launch the clean baseline if bo
 - Preserved the incomplete v0.1a run in private storage and excluded it from the clean baseline.
 
 Next action: tag `baseline-v0.1b` and launch a clean 160-response baseline.
+
+## 2026-09-01: full-panel replication
+
+- Completed the clean v0.1b baseline with 160 of 160 valid responses, 20 per model family and no permanent failures.
+- Recorded 764 recommendations at a total API cost of $0.9866.
+- Decided before firm-level analysis to run 4 additional repetitions of every model-prompt cell.
+- The replication batch adds 640 planned responses and creates 5 total observations per cell.
+- Chose complete-panel replication to measure stochastic stability without selecting prompts based on interesting initial results.
+- Kept execution sequential to reduce provider rate-limit and concurrency effects.
+
+Next action: freeze the replication configuration and launch runs 2–5 as a separate checkpointed dataset.
