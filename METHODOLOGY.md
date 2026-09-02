@@ -160,6 +160,19 @@ These outcomes are operationalised before collection as follows:
 
 The five ladder categories map to the baseline discovery prompts for climate hardware, European defence, European university spinouts, developer infrastructure and capital-efficient SaaS. Ties in a firm's highest category count qualify. Firms with blank names are excluded from every rate.
 
+### 7.4 Native-product spot check
+
+A small descriptive check compares the API experiment with the consumer products founders may actually use. It covers ChatGPT, Claude, Gemini and Grok, subject to product access, using fresh chats and the exact frozen wording for four prompts:
+
+- `discovery_enterprise_ai`
+- `discovery_eu_defence`
+- `problem_founder_led_sales`
+- `problem_default_alive`
+
+Each product-prompt pair is sampled once. The researcher records the displayed product or model label, account state, personalisation or memory state where visible, whether the product searched the web, the answer text, citations, timestamp and any refusal or error. No hidden model identity is inferred when the interface does not disclose it.
+
+These 16 observations are a spot check, not a powered comparison. They are reported separately and never pooled with the controlled closed-book or common-retriever results because native products differ in system prompts, routing, personalisation, retrieval and interface behaviour.
+
 ## 8. Standard response instruction
 
 Discovery prompts request no more than five firms and require a specific reason for each inclusion. Models are instructed to avoid famous generalists when they lack a concrete connection to the founder's situation.

@@ -80,3 +80,10 @@ Next action: freeze the open-book execution configuration, run a 2-call search s
 - Reconciled the measures section with that operational definition: rationale quality remains a separate human-coded judgment rather than being folded into the prestige-leakage rate.
 
 Next action: run the specificity ladder only after validating the controlled open-book comparison and its remaining budget.
+
+## 2026-09-02: native-product spot check frozen
+
+- Added a separate 16-observation descriptive check across ChatGPT, Claude, Gemini and Grok.
+- Selected two discovery prompts and two founder-problem prompts from the already frozen panel.
+- Required fresh chats and logging of visible product state, search behaviour, citations and errors.
+- Prohibited pooling native-product observations with either controlled API condition.
