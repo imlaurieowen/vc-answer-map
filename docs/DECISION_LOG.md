@@ -59,3 +59,11 @@ Next action: freeze the replication configuration and launch runs 2–5 as a sep
 - Preserved the remaining budget for retrieval and prompt-sensitivity evidence rather than further general repetition.
 
 Next action: freeze the open-book execution configuration, run a 2-call search smoke test and launch the 480-response comparison if validation passes.
+
+## 2026-09-02: interruption-safe execution
+
+- Added a connectivity gate before every paid request.
+- When OpenRouter is unreachable, the runner waits locally and does not consume a model-prompt attempt.
+- Completed responses remain checkpointed and are skipped after restart.
+- The detached macOS session can resume after temporary Wi-Fi loss or system wake.
+- This operational change does not alter prompts, models, scoring or response conditions.
