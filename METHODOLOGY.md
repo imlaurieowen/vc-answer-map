@@ -258,6 +258,12 @@ Whether a named framework or idea is connected to the correct originator and ori
 
 The difference between a firm's closed-book inclusion and open-book inclusion for the same prompt panel.
 
+### 11.10 Retrieval convergence (exploratory)
+
+After reviewing partial open-book output, the researchers added an exploratory diagnostic for whether a common retrieval layer causes different model families to cite the same domains or recommend the same newly retrieved firms. This analysis reports source-domain frequency, the number of model families citing each domain, and cross-model recommendation overlap within prompts.
+
+This measure was added after some open-book results were visible. It is post-hoc, is labelled exploratory in every result, and is not evidence for a preregistered hypothesis. It does not change the frozen prompts, response collection or preregistered measures.
+
 ## 12. Human verification
 
 Model output is evidence of model behaviour. It is not evidence that a factual claim about a venture firm is true.

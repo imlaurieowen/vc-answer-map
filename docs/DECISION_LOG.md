@@ -87,3 +87,11 @@ Next action: run the specificity ladder only after validating the controlled ope
 - Selected two discovery prompts and two founder-problem prompts from the already frozen panel.
 - Required fresh chats and logging of visible product state, search behaviour, citations and errors.
 - Prohibited pooling native-product observations with either controlled API condition.
+
+## 2026-09-02: exploratory retrieval-convergence diagnostic
+
+- Reviewed partial output from the controlled open-book condition while collection was still in progress.
+- Observed that several model families were citing the same domains and surfacing the same clusters of niche firms under the shared retrieval layer.
+- Added a post-hoc diagnostic for source-domain frequency, model-family coverage and cross-model recommendation overlap.
+- Labelled this analysis exploratory because it was motivated by visible partial results.
+- Made no change to prompts, models, collection settings or preregistered measures.
