@@ -67,3 +67,14 @@ Next action: freeze the open-book execution configuration, run a 2-call search s
 - Completed responses remain checkpointed and are skipped after restart.
 - The detached macOS session can resume after temporary Wi-Fi loss or system wake.
 - This operational change does not alter prompts, models, scoring or response conditions.
+
+## 2026-09-02: specificity prompts frozen
+
+- Froze 15 prompts across 5 categories and 3 levels of legitimate founder specificity.
+- Categories: climate hardware, defence technology, university spinouts, developer infrastructure and capital-efficient SaaS.
+- Level 1 names only the broad category.
+- Level 2 adds stage, geography and a category constraint.
+- Level 3 adds a subsector, company state and investor-relevant operating constraints.
+- The experiment will measure unique-firm count, specialist inclusion, concentration and prestige leakage at each level.
+
+Next action: run the specificity ladder only after validating the controlled open-book comparison and its remaining budget.

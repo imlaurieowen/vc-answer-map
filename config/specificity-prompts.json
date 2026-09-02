@@ -1,0 +1,92 @@
+[
+  {
+    "id": "specificity_climate_1_broad",
+    "category": "climate_hardware",
+    "level": 1,
+    "prompt": "Which venture capital firms should a climate technology founder consider?"
+  },
+  {
+    "id": "specificity_climate_2_constrained",
+    "category": "climate_hardware",
+    "level": 2,
+    "prompt": "I am building a European climate hardware company and raising a pre-seed round. Which venture capital firms should I consider?"
+  },
+  {
+    "id": "specificity_climate_3_specific",
+    "category": "climate_hardware",
+    "level": 3,
+    "prompt": "I am building capital-intensive industrial heat decarbonisation hardware in Europe and raising pre-seed before commercial revenue. I need investors who understand technical risk, industrial pilots and follow-on project financing. Which venture capital firms should I consider?"
+  },
+  {
+    "id": "specificity_defence_1_broad",
+    "category": "defence_technology",
+    "level": 1,
+    "prompt": "Which venture capital firms should a defence technology founder consider?"
+  },
+  {
+    "id": "specificity_defence_2_constrained",
+    "category": "defence_technology",
+    "level": 2,
+    "prompt": "I am building a European defence technology company and raising a seed round. Which venture capital firms should I consider?"
+  },
+  {
+    "id": "specificity_defence_3_specific",
+    "category": "defence_technology",
+    "level": 3,
+    "prompt": "I am building dual-use autonomous maritime systems in Europe and raising a seed round. I need investors who understand defence procurement, NATO customers, long sales cycles and hardware manufacturing. Which venture capital firms should I consider?"
+  },
+  {
+    "id": "specificity_spinout_1_broad",
+    "category": "university_spinout",
+    "level": 1,
+    "prompt": "Which venture capital firms should a university spinout consider?"
+  },
+  {
+    "id": "specificity_spinout_2_constrained",
+    "category": "university_spinout",
+    "level": 2,
+    "prompt": "I am commercialising deep technology from a UK university and raising pre-seed funding. Which venture capital firms should I consider?"
+  },
+  {
+    "id": "specificity_spinout_3_specific",
+    "category": "university_spinout",
+    "level": 3,
+    "prompt": "I am spinning out photonic computing technology from a UK university before commercial revenue. The company must negotiate university IP, fund technical validation milestones and recruit its first commercial leader. Which venture capital firms should I consider for a pre-seed round?"
+  },
+  {
+    "id": "specificity_devinfra_1_broad",
+    "category": "developer_infrastructure",
+    "level": 1,
+    "prompt": "Which venture capital firms should a developer tools founder consider?"
+  },
+  {
+    "id": "specificity_devinfra_2_constrained",
+    "category": "developer_infrastructure",
+    "level": 2,
+    "prompt": "I am building open-source developer infrastructure in Europe and raising a seed round. Which venture capital firms should I consider?"
+  },
+  {
+    "id": "specificity_devinfra_3_specific",
+    "category": "developer_infrastructure",
+    "level": 3,
+    "prompt": "I am building open-source observability infrastructure for AI workloads in Europe and raising seed before a repeatable enterprise sales motion. I need investors who understand developer adoption, open-source commercialisation and enterprise go-to-market. Which venture capital firms should I consider?"
+  },
+  {
+    "id": "specificity_saas_1_broad",
+    "category": "capital_efficient_saas",
+    "level": 1,
+    "prompt": "Which venture capital firms should a B2B SaaS founder consider?"
+  },
+  {
+    "id": "specificity_saas_2_constrained",
+    "category": "capital_efficient_saas",
+    "level": 2,
+    "prompt": "I am building a capital-efficient European B2B SaaS company and raising a seed round. Which venture capital firms should I consider?"
+  },
+  {
+    "id": "specificity_saas_3_specific",
+    "category": "capital_efficient_saas",
+    "level": 3,
+    "prompt": "I am building vertical B2B SaaS for independent logistics operators in Europe. We have early revenue, a small team and a deliberate path to profitability rather than growth at any cost. Which seed investors are philosophically and operationally aligned with this approach?"
+  }
+]
