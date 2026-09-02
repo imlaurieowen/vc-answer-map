@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="825" viewBox="0 0 1280 825">
+<rect width="100%" height="100%" fill="#111315"/>
+<style>
+text { font-family: Inter, Arial, sans-serif; fill: #F4F0E6; }
+.title { font-size: 34px; font-weight: 700; } .sub { font-size: 17px; fill: #A5A7A9; }
+.big { font-size: 76px; font-weight: 750; } .label { font-size: 18px; }
+.small { font-size: 14px; fill: #A5A7A9; } .firm { font-size: 15px; font-weight: 650; }
+</style><text x="50" y="62" class="title">Memory and retrieval nominate different category owners</text>
+<text x="50" y="98" class="sub">Most frequently included firm in each discovery prompt</text>
+<text x="400" y="142" class="label" fill="#C7F36B">Closed-book leader</text>
+<text x="850" y="142" class="label" fill="#78A9FF">Common-retriever leader</text>
+<text x="50" y="180" class="small">Capital-efficient SaaS</text>
+<text x="400" y="180" class="firm">Point Nine Capital · 50%</text>
+<text x="850" y="180" class="firm">Calm Company Fund · 100%</text>
+<line x1="50" y1="198" x2="1220" y2="198" stroke="#34383C"/>
+<text x="50" y="238" class="small">Climate hardware</text>
+<text x="400" y="238" class="firm">Breakthrough Energy Ventures · 100%</text>
+<text x="850" y="238" class="firm">KOMPAS VC · 92%</text>
+<line x1="50" y1="256" x2="1220" y2="256" stroke="#34383C"/>
+<text x="50" y="296" class="small">Consumer</text>
+<text x="400" y="296" class="firm">Forerunner Ventures · 88%</text>
+<text x="850" y="296" class="firm">Mantis VC · 83%</text>
+<line x1="50" y1="314" x2="1220" y2="314" stroke="#34383C"/>
+<text x="50" y="354" class="small">Developer infrastructure</text>
+<text x="400" y="354" class="firm">Heavybit · 82%</text>
+<text x="850" y="354" class="firm">Heavybit · 100%</text>
+<line x1="50" y1="372" x2="1220" y2="372" stroke="#34383C"/>
+<text x="50" y="412" class="small">Enterprise AI</text>
+<text x="400" y="412" class="firm">Bessemer Venture Partners · 60%</text>
+<text x="850" y="412" class="firm">Salesforce Ventures · 100%</text>
+<line x1="50" y1="430" x2="1220" y2="430" stroke="#34383C"/>
+<text x="50" y="470" class="small">European biotech</text>
+<text x="400" y="470" class="firm">Sofinnova Partners · 78%</text>
+<text x="850" y="470" class="firm">BioGeneration Ventures · 100%</text>
+<line x1="50" y1="488" x2="1220" y2="488" stroke="#34383C"/>
+<text x="50" y="528" class="small">European defence</text>
+<text x="400" y="528" class="firm">NATO Innovation Fund · 62%</text>
+<text x="850" y="528" class="firm">Archangel · 100%</text>
+<line x1="50" y1="546" x2="1220" y2="546" stroke="#34383C"/>
+<text x="50" y="586" class="small">University spinouts</text>
+<text x="400" y="586" class="firm">Cambridge Innovation Capital · 65%</text>
+<text x="850" y="586" class="firm">U2V · 100%</text>
+<line x1="50" y1="604" x2="1220" y2="604" stroke="#34383C"/>
+<text x="50" y="644" class="small">Fintech infrastructure</text>
+<text x="400" y="644" class="firm">QED Investors · 78%</text>
+<text x="850" y="644" class="firm">Caldo Ventures · 100%</text>
+<line x1="50" y1="662" x2="1220" y2="662" stroke="#34383C"/>
+<text x="50" y="702" class="small">Pre-Seed technical founder</text>
+<text x="400" y="702" class="firm">Y Combinator · 62%</text>
+<text x="850" y="702" class="firm">Valia Ventures · 92%</text>
+<line x1="50" y1="720" x2="1220" y2="720" stroke="#34383C"/>
+<text x="50" y="785" class="small">Rates use 40 closed-book and 24 open-book responses per prompt. Model behaviour, not firm quality.</text></svg>

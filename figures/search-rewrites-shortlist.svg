@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="450" viewBox="0 0 1280 450">
+<rect width="100%" height="100%" fill="#111315"/>
+<style>
+text { font-family: Inter, Arial, sans-serif; fill: #F4F0E6; }
+.title { font-size: 34px; font-weight: 700; } .sub { font-size: 17px; fill: #A5A7A9; }
+.big { font-size: 76px; font-weight: 750; } .label { font-size: 18px; }
+.small { font-size: 14px; fill: #A5A7A9; } .firm { font-size: 15px; font-weight: 650; }
+</style><text x="60" y="68" class="title">Search rewrote the shortlist</text>
+<text x="60" y="104" class="sub">Controlled comparison across 8 model families and 20 identical prompts</text>
+<text x="90" y="245" class="big" fill="#C7F36B">13.1%</text>
+<text x="90" y="287" class="label">mean overlap between closed- and open-book firm sets</text>
+<text x="715" y="245" class="big" fill="#78A9FF">17.5%</text>
+<text x="715" y="287" class="label">kept the same modal first recommendation</text>
+<line x1="640" y1="150" x2="640" y2="325" stroke="#34383C" stroke-width="2"/>
+<text x="60" y="395" class="small">160 model-prompt cells. Open-book used the same Exa retrieval layer for every model family.</text></svg>

@@ -102,3 +102,14 @@ Next action: run the specificity ladder only after validating the controlled ope
 - Froze a post-hoc audit of the five most-mentioned firms in each open-book discovery prompt.
 - Required current primary-source checks for entity status, stage, geography and category fit, plus documented warning signs.
 - Kept this source-quality judgment separate from quantitative inclusion and citation measures.
+# 2026-09-02: Baseline candidate and editorial release
+
+- Completed 800 closed-book, 480 common-retriever and 720 specificity responses across 8 model families.
+- Published reviewed aggregate tables rather than unreviewed raw model responses.
+- Kept the common-retriever condition distinct from native consumer-product browsing.
+- Treated cross-model retrieval convergence as exploratory because it was registered after partial results were observed.
+- Audited the top 5 retrieved firms for each funding prompt against current public sources: 39 verified, 8 qualified and 3 requiring manual review.
+- Described manual-review cases as observable diligence warnings, not findings of illegitimacy.
+- Retained the negative specificity result: more detail reduced empirical prestige leakage but did not monotonically increase the preregistered category-target share.
+- Produced SVG and high-resolution PNG figures plus a publication draft.
+- Completed an independent model review, logged accepted and rejected recommendations, and retained native-product spot checks as the explicit remaining gate.

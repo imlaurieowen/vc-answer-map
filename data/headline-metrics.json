@@ -1,0 +1,44 @@
+{
+  "closed_book_responses": 800,
+  "open_book_responses": 480,
+  "specificity_responses": 720,
+  "total_primary_responses": 2000,
+  "mean_closed_open_jaccard": 0.1305,
+  "modal_top1_same_share": 0.175,
+  "open_source_url_coverage": 0.9982,
+  "retrieved_source_audit": {
+    "qualified": 8,
+    "verified": 39,
+    "needs_manual_review": 3
+  },
+  "by_prompt_type": {
+    "discovery": {
+      "closed_recommendations": 1952,
+      "closed_unique_firms": 323,
+      "closed_top5_share": 0.1306,
+      "closed_top5_firms": [
+        "Andreessen Horowitz",
+        "Index Ventures",
+        "Bessemer Venture Partners",
+        "Sofinnova Partners",
+        "Amplify Partners"
+      ],
+      "mean_closed_open_jaccard": 0.0509,
+      "modal_top1_same_share": 0.0875
+    },
+    "problem": {
+      "closed_recommendations": 1525,
+      "closed_unique_firms": 49,
+      "closed_top5_share": 0.7102,
+      "closed_top5_firms": [
+        "Andreessen Horowitz",
+        "Y Combinator",
+        "Sequoia Capital",
+        "First Round Capital",
+        "Benchmark"
+      ],
+      "mean_closed_open_jaccard": 0.2102,
+      "modal_top1_same_share": 0.2625
+    }
+  }
+}

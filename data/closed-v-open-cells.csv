@@ -1,0 +1,161 @@
+model,prompt_id,closed_unique_firms,open_unique_firms,shared_firms,set_jaccard,closed_modal_top1,open_modal_top1,top1_same
+anthropic/claude-sonnet-5,discovery_capital_efficient_saas,18,5,1,0.0455,Bessemer Venture Partners,Calm Company Fund,0
+anthropic/claude-sonnet-5,discovery_climate_hardware,8,7,0,0.0,Breakthrough Energy Ventures,Extantia Capital,0
+anthropic/claude-sonnet-5,discovery_consumer,13,7,2,0.1111,Andreessen Horowitz,Forerunner Ventures,0
+anthropic/claude-sonnet-5,discovery_dev_infra,6,5,1,0.1,Heavybit,Heavybit,1
+anthropic/claude-sonnet-5,discovery_enterprise_ai,9,9,2,0.125,Bessemer Venture Partners,Salesforce Ventures,0
+anthropic/claude-sonnet-5,discovery_eu_biotech,9,5,1,0.0769,Sofinnova Partners,Kurma Partners,0
+anthropic/claude-sonnet-5,discovery_eu_defence,9,6,0,0.0,Project A Ventures,Archangel,0
+anthropic/claude-sonnet-5,discovery_eu_spinout,15,6,0,0.0,IP Group,Noctua Science Ventures,0
+anthropic/claude-sonnet-5,discovery_fintech_infra,9,6,1,0.0714,Ribbit Capital,Caldo Ventures,0
+anthropic/claude-sonnet-5,discovery_preseed_technical,10,7,0,0.0,Hustle Fund,Menlo Ventures Inception Fund,0
+anthropic/claude-sonnet-5,problem_board_meeting,6,5,2,0.2222,Andreessen Horowitz,True Ventures,0
+anthropic/claude-sonnet-5,problem_default_alive,3,2,1,0.25,Y Combinator,Y Combinator,1
+anthropic/claude-sonnet-5,problem_enterprise_sales,9,2,2,0.2222,Bessemer Venture Partners,Andreessen Horowitz,0
+anthropic/claude-sonnet-5,problem_first_ten_customers,5,1,0,0.0,Y Combinator,Uncork Capital,0
+anthropic/claude-sonnet-5,problem_founder_led_sales,9,7,1,0.0667,First Round Capital,Euclid Ventures,0
+anthropic/claude-sonnet-5,problem_new_market_size,7,3,1,0.1111,Benchmark,Andreessen Horowitz,0
+anthropic/claude-sonnet-5,problem_product_market_fit,7,5,3,0.3333,Andreessen Horowitz,Sequoia Capital,0
+anthropic/claude-sonnet-5,problem_raise_or_profit,6,6,3,0.3333,Bessemer Venture Partners,Andreessen Horowitz,0
+anthropic/claude-sonnet-5,problem_replace_executive,6,3,1,0.125,Andreessen Horowitz,Andreessen Horowitz,1
+anthropic/claude-sonnet-5,problem_should_raise_vc,5,7,1,0.0909,Union Square Ventures,a16z Speedrun,0
+deepseek/deepseek-v4-pro-0813,discovery_capital_efficient_saas,9,6,1,0.0714,Indie.vc,Calm Company Fund,0
+deepseek/deepseek-v4-pro-0813,discovery_climate_hardware,7,5,0,0.0,Breakthrough Energy Ventures,Treverge,0
+deepseek/deepseek-v4-pro-0813,discovery_consumer,7,7,2,0.1667,Andreessen Horowitz,Mantis VC,0
+deepseek/deepseek-v4-pro-0813,discovery_dev_infra,7,5,1,0.0909,Amplify Partners,Heavybit,0
+deepseek/deepseek-v4-pro-0813,discovery_enterprise_ai,6,7,1,0.0833,Sequoia Capital,G2C Ventures,0
+deepseek/deepseek-v4-pro-0813,discovery_eu_biotech,6,6,1,0.0909,Sofinnova Partners,BioGeneration Ventures,0
+deepseek/deepseek-v4-pro-0813,discovery_eu_defence,8,5,0,0.0,NATO Innovation Fund,Archangel,0
+deepseek/deepseek-v4-pro-0813,discovery_eu_spinout,6,5,0,0.0,IP Group,IP Lab Ventures,0
+deepseek/deepseek-v4-pro-0813,discovery_fintech_infra,7,6,0,0.0,QED Investors,Caldo Ventures,0
+deepseek/deepseek-v4-pro-0813,discovery_preseed_technical,10,8,0,0.0,Y Combinator,Menlo Ventures,0
+deepseek/deepseek-v4-pro-0813,problem_board_meeting,5,5,2,0.25,Andreessen Horowitz,True Ventures,0
+deepseek/deepseek-v4-pro-0813,problem_default_alive,3,3,2,0.5,Y Combinator,Y Combinator,1
+deepseek/deepseek-v4-pro-0813,problem_enterprise_sales,7,2,2,0.2857,First Round Capital,Andreessen Horowitz,0
+deepseek/deepseek-v4-pro-0813,problem_first_ten_customers,5,6,2,0.2222,Y Combinator,Uncork Capital,0
+deepseek/deepseek-v4-pro-0813,problem_founder_led_sales,5,7,1,0.0909,First Round Capital,Euclid Ventures,0
+deepseek/deepseek-v4-pro-0813,problem_new_market_size,6,3,1,0.125,Sequoia Capital,Andreessen Horowitz,0
+deepseek/deepseek-v4-pro-0813,problem_product_market_fit,6,6,3,0.3333,Andreessen Horowitz,Sequoia Capital,0
+deepseek/deepseek-v4-pro-0813,problem_raise_or_profit,5,7,3,0.3333,Sequoia Capital,Kleiner Perkins,0
+deepseek/deepseek-v4-pro-0813,problem_replace_executive,6,4,2,0.25,Andreessen Horowitz,Andreessen Horowitz,1
+deepseek/deepseek-v4-pro-0813,problem_should_raise_vc,6,6,1,0.0909,Y Combinator,Andreessen Horowitz,0
+google/gemini-3.7-flash,discovery_capital_efficient_saas,11,6,2,0.1333,TinySeed,Calm Company Fund,0
+google/gemini-3.7-flash,discovery_climate_hardware,8,6,0,0.0,Breakthrough Energy Ventures,Extantia Capital,0
+google/gemini-3.7-flash,discovery_consumer,10,6,2,0.1429,Forerunner Ventures,Andreessen Horowitz,0
+google/gemini-3.7-flash,discovery_dev_infra,6,5,1,0.1,Amplify Partners,Heavybit,0
+google/gemini-3.7-flash,discovery_enterprise_ai,9,8,1,0.0625,Bessemer Venture Partners,Salesforce Ventures,0
+google/gemini-3.7-flash,discovery_eu_biotech,13,5,1,0.0588,Sofinnova Partners,BioGeneration Ventures,0
+google/gemini-3.7-flash,discovery_eu_defence,8,5,0,0.0,Project A Ventures,Archangel,0
+google/gemini-3.7-flash,discovery_eu_spinout,11,6,0,0.0,Vsquared Ventures,U2V,0
+google/gemini-3.7-flash,discovery_fintech_infra,8,6,0,0.0,Ribbit Capital,Caldo Ventures,0
+google/gemini-3.7-flash,discovery_preseed_technical,8,5,0,0.0,Root Ventures,Menlo Ventures,0
+google/gemini-3.7-flash,problem_board_meeting,7,6,1,0.0833,Benchmark,True Ventures,0
+google/gemini-3.7-flash,problem_default_alive,6,2,1,0.1429,Y Combinator,Y Combinator,1
+google/gemini-3.7-flash,problem_enterprise_sales,9,3,2,0.2,Andreessen Horowitz,First Round Capital,0
+google/gemini-3.7-flash,problem_first_ten_customers,7,4,3,0.375,Y Combinator,Uncork Capital,0
+google/gemini-3.7-flash,problem_founder_led_sales,7,5,1,0.0909,First Round Capital,Ansa,0
+google/gemini-3.7-flash,problem_new_market_size,9,3,2,0.2,Founders Fund,First Round Capital,0
+google/gemini-3.7-flash,problem_product_market_fit,8,7,5,0.5,Andreessen Horowitz,Andreessen Horowitz,1
+google/gemini-3.7-flash,problem_raise_or_profit,9,6,3,0.25,Y Combinator,Kleiner Perkins,0
+google/gemini-3.7-flash,problem_replace_executive,6,5,2,0.2222,Andreessen Horowitz,General Catalyst,0
+google/gemini-3.7-flash,problem_should_raise_vc,9,6,1,0.0714,Y Combinator,Andreessen Horowitz,0
+meta-llama/llama-4-maverick,discovery_capital_efficient_saas,6,6,0,0.0,Thrive Capital,Calm Company Fund,0
+meta-llama/llama-4-maverick,discovery_climate_hardware,5,6,0,0.0,Lowercarbon Capital,Treverge,0
+meta-llama/llama-4-maverick,discovery_consumer,6,5,1,0.1,SignalFire,Everybody Ventures,0
+meta-llama/llama-4-maverick,discovery_dev_infra,6,7,0,0.0,Theory Ventures,Heavybit,0
+meta-llama/llama-4-maverick,discovery_enterprise_ai,4,5,0,0.0,DCVC,G2C Ventures,0
+meta-llama/llama-4-maverick,discovery_eu_biotech,6,6,0,0.0,Lundbeckfond Ventures,Biovision Ventures,0
+meta-llama/llama-4-maverick,discovery_eu_defence,14,6,0,0.0,ATLAS Venture,Archangel,0
+meta-llama/llama-4-maverick,discovery_eu_spinout,5,6,0,0.0,Oxford Sciences Innovation,U2V,0
+meta-llama/llama-4-maverick,discovery_fintech_infra,6,6,1,0.0909,Anduin Transactions,Caldo Ventures,0
+meta-llama/llama-4-maverick,discovery_preseed_technical,7,7,0,0.0,Y Combinator,2048 Ventures,0
+meta-llama/llama-4-maverick,problem_board_meeting,4,4,1,0.1429,Sequoia Capital,True Ventures,0
+meta-llama/llama-4-maverick,problem_default_alive,1,3,1,0.3333,Y Combinator,,0
+meta-llama/llama-4-maverick,problem_enterprise_sales,4,3,1,0.1667,Andreessen Horowitz,Andreessen Horowitz,1
+meta-llama/llama-4-maverick,problem_first_ten_customers,4,6,1,0.1111,Andreessen Horowitz,Uncork Capital,0
+meta-llama/llama-4-maverick,problem_founder_led_sales,5,5,0,0.0,Andreessen Horowitz,Euclid Ventures,0
+meta-llama/llama-4-maverick,problem_new_market_size,3,4,1,0.1667,Andreessen Horowitz,Andreessen Horowitz,1
+meta-llama/llama-4-maverick,problem_product_market_fit,3,5,2,0.3333,Andreessen Horowitz,Sequoia Capital,0
+meta-llama/llama-4-maverick,problem_raise_or_profit,3,5,1,0.1429,Andreessen Horowitz,Andreessen Horowitz,1
+meta-llama/llama-4-maverick,problem_replace_executive,3,3,1,0.2,Benchmark,Andreessen Horowitz,0
+meta-llama/llama-4-maverick,problem_should_raise_vc,5,5,1,0.1111,Andreessen Horowitz,Andreessen Horowitz,1
+mistralai/mistral-medium-3-5,discovery_capital_efficient_saas,10,5,1,0.0714,Basecase,Calm Company Fund,0
+mistralai/mistral-medium-3-5,discovery_climate_hardware,8,7,0,0.0,Congruent Ventures,Extantia Capital,0
+mistralai/mistral-medium-3-5,discovery_consumer,7,6,1,0.0833,Andreessen Horowitz,Forerunner Ventures,0
+mistralai/mistral-medium-3-5,discovery_dev_infra,7,5,1,0.0909,Heavybit,Heavybit,1
+mistralai/mistral-medium-3-5,discovery_enterprise_ai,7,8,1,0.0714,Scale Venture Partners,G2C Ventures,0
+mistralai/mistral-medium-3-5,discovery_eu_biotech,5,6,0,0.0,Sofinnova Partners,BioGeneration Ventures,0
+mistralai/mistral-medium-3-5,discovery_eu_defence,9,5,0,0.0,Serra Ventures,Archangel,0
+mistralai/mistral-medium-3-5,discovery_eu_spinout,7,7,0,0.0,Cambridge Innovation Capital,U2V,0
+mistralai/mistral-medium-3-5,discovery_fintech_infra,6,8,1,0.0769,Index Ventures,Caldo Ventures,0
+mistralai/mistral-medium-3-5,discovery_preseed_technical,9,6,1,0.0714,Y Combinator,2048 Ventures,0
+mistralai/mistral-medium-3-5,problem_board_meeting,5,5,1,0.1111,Andreessen Horowitz,True Ventures,0
+mistralai/mistral-medium-3-5,problem_default_alive,3,2,2,0.6667,Y Combinator,Y Combinator,1
+mistralai/mistral-medium-3-5,problem_enterprise_sales,5,2,1,0.1667,Andreessen Horowitz,Andreessen Horowitz,1
+mistralai/mistral-medium-3-5,problem_first_ten_customers,4,2,1,0.2,Y Combinator,Uncork Capital,0
+mistralai/mistral-medium-3-5,problem_founder_led_sales,4,6,0,0.0,First Round Capital,Euclid Ventures,0
+mistralai/mistral-medium-3-5,problem_new_market_size,5,2,1,0.1667,Andreessen Horowitz,Andreessen Horowitz,1
+mistralai/mistral-medium-3-5,problem_product_market_fit,4,4,3,0.6,Andreessen Horowitz,Sequoia Capital,0
+mistralai/mistral-medium-3-5,problem_raise_or_profit,6,4,3,0.4286,Benchmark,Andreessen Horowitz,0
+mistralai/mistral-medium-3-5,problem_replace_executive,5,4,1,0.125,Benchmark,Andreessen Horowitz,0
+mistralai/mistral-medium-3-5,problem_should_raise_vc,5,4,1,0.125,Andreessen Horowitz,Andreessen Horowitz,1
+openai/gpt-5.6-sol,discovery_capital_efficient_saas,9,6,2,0.1538,Calm Company Fund,Calm Company Fund,1
+openai/gpt-5.6-sol,discovery_climate_hardware,10,7,0,0.0,Breakthrough Energy Ventures,Treverge,0
+openai/gpt-5.6-sol,discovery_consumer,10,6,2,0.1429,Forerunner Ventures,Everybody Ventures,0
+openai/gpt-5.6-sol,discovery_dev_infra,11,6,1,0.0625,Heavybit,Heavybit,1
+openai/gpt-5.6-sol,discovery_enterprise_ai,11,6,2,0.1333,Emergence Capital,Menlo Ventures,0
+openai/gpt-5.6-sol,discovery_eu_biotech,6,7,2,0.1818,BioGeneration Ventures,BioGeneration Ventures,1
+openai/gpt-5.6-sol,discovery_eu_defence,9,5,1,0.0769,NATO Innovation Fund,Archangel,0
+openai/gpt-5.6-sol,discovery_eu_spinout,12,9,0,0.0,Parkwalk Advisors,U2V,0
+openai/gpt-5.6-sol,discovery_fintech_infra,10,6,1,0.0667,Canapi Ventures,Caldo Ventures,0
+openai/gpt-5.6-sol,discovery_preseed_technical,8,6,0,0.0,Afore Capital,Menlo Ventures,0
+openai/gpt-5.6-sol,problem_board_meeting,6,5,1,0.1,Y Combinator,True Ventures,0
+openai/gpt-5.6-sol,problem_default_alive,2,1,1,0.5,Y Combinator,Y Combinator,1
+openai/gpt-5.6-sol,problem_enterprise_sales,8,3,2,0.2222,SaaStr Fund,Andreessen Horowitz,0
+openai/gpt-5.6-sol,problem_first_ten_customers,8,3,0,0.0,Y Combinator,Uncork Capital,0
+openai/gpt-5.6-sol,problem_founder_led_sales,8,5,0,0.0,Y Combinator,Euclid Ventures,0
+openai/gpt-5.6-sol,problem_new_market_size,6,3,1,0.125,Y Combinator,Andreessen Horowitz,0
+openai/gpt-5.6-sol,problem_product_market_fit,5,5,3,0.4286,First Round Capital,First Round Capital,1
+openai/gpt-5.6-sol,problem_raise_or_profit,5,7,1,0.0909,Y Combinator,Y Combinator,1
+openai/gpt-5.6-sol,problem_replace_executive,5,5,2,0.25,Andreessen Horowitz,Andreessen Horowitz,1
+openai/gpt-5.6-sol,problem_should_raise_vc,9,6,1,0.0714,Y Combinator,Andreessen Horowitz (a16z speedrun),0
+qwen/qwen3.8-max,discovery_capital_efficient_saas,12,6,0,0.0,Basecase Capital,Calm Company Fund,0
+qwen/qwen3.8-max,discovery_climate_hardware,8,7,0,0.0,Breakthrough Energy Ventures,Extantia Capital,0
+qwen/qwen3.8-max,discovery_consumer,10,8,2,0.125,Forerunner Ventures,Forerunner Ventures,1
+qwen/qwen3.8-max,discovery_dev_infra,10,5,1,0.0714,Seedcamp,Heavybit,0
+qwen/qwen3.8-max,discovery_enterprise_ai,10,7,1,0.0625,Bessemer Venture Partners,Salesforce Ventures,0
+qwen/qwen3.8-max,discovery_eu_biotech,12,5,1,0.0625,Medicxi,BioGeneration Ventures,0
+qwen/qwen3.8-max,discovery_eu_defence,10,5,0,0.0,NATO Innovation Fund,Archangel,0
+qwen/qwen3.8-max,discovery_eu_spinout,11,7,0,0.0,Cambridge Innovation Capital,U2V,0
+qwen/qwen3.8-max,discovery_fintech_infra,10,6,1,0.0667,Ribbit Capital,Caldo Ventures,0
+qwen/qwen3.8-max,discovery_preseed_technical,10,9,0,0.0,Pre-Seed Ventures,Menlo Ventures,0
+qwen/qwen3.8-max,problem_board_meeting,6,7,2,0.1818,Andreessen Horowitz,True Ventures,0
+qwen/qwen3.8-max,problem_default_alive,3,2,2,0.6667,Y Combinator,Y Combinator,1
+qwen/qwen3.8-max,problem_enterprise_sales,7,3,2,0.25,Bessemer Venture Partners,Andreessen Horowitz,0
+qwen/qwen3.8-max,problem_first_ten_customers,4,4,1,0.1429,Y Combinator,Uncork Capital,0
+qwen/qwen3.8-max,problem_founder_led_sales,7,5,0,0.0,Y Combinator,Euclid Ventures,0
+qwen/qwen3.8-max,problem_new_market_size,6,4,1,0.1111,Sequoia Capital,Andreessen Horowitz,0
+qwen/qwen3.8-max,problem_product_market_fit,6,6,4,0.5,Andreessen Horowitz,Sequoia Capital,0
+qwen/qwen3.8-max,problem_raise_or_profit,9,6,2,0.1538,Y Combinator,Andreessen Horowitz,0
+qwen/qwen3.8-max,problem_replace_executive,6,5,1,0.1,First Round Capital,Andreessen Horowitz,0
+qwen/qwen3.8-max,problem_should_raise_vc,6,5,1,0.1,Y Combinator,Andreessen Horowitz,0
+x-ai/grok-4.6,discovery_capital_efficient_saas,13,6,1,0.0556,Point Nine Capital,Calm Company Fund,0
+x-ai/grok-4.6,discovery_climate_hardware,10,6,0,0.0,Breakthrough Energy Ventures,Treverge,0
+x-ai/grok-4.6,discovery_consumer,13,7,3,0.1765,Forerunner Ventures,Forerunner Ventures,1
+x-ai/grok-4.6,discovery_dev_infra,8,5,1,0.0833,Amplify Partners,Heavybit,0
+x-ai/grok-4.6,discovery_enterprise_ai,7,6,1,0.0833,Andreessen Horowitz,Salesforce Ventures,0
+x-ai/grok-4.6,discovery_eu_biotech,7,5,2,0.2,Sofinnova Partners,BioGeneration Ventures,0
+x-ai/grok-4.6,discovery_eu_defence,11,6,0,0.0,NATO Innovation Fund,Archangel,0
+x-ai/grok-4.6,discovery_eu_spinout,6,6,0,0.0,IP Group,U2V,0
+x-ai/grok-4.6,discovery_fintech_infra,8,6,1,0.0769,Nyca Partners,Caldo Ventures,0
+x-ai/grok-4.6,discovery_preseed_technical,12,7,0,0.0,Precursor Ventures,Menlo Ventures Inception Fund,0
+x-ai/grok-4.6,problem_board_meeting,5,4,1,0.125,Union Square Ventures,True Ventures,0
+x-ai/grok-4.6,problem_default_alive,1,2,1,0.5,Y Combinator,Y Combinator,1
+x-ai/grok-4.6,problem_enterprise_sales,8,2,1,0.1111,SaaStr,Andreessen Horowitz,0
+x-ai/grok-4.6,problem_first_ten_customers,2,2,1,0.3333,Y Combinator,Uncork Capital,0
+x-ai/grok-4.6,problem_founder_led_sales,8,5,1,0.0833,Y Combinator,Euclid Ventures,0
+x-ai/grok-4.6,problem_new_market_size,5,4,1,0.125,Founders Fund,Andreessen Horowitz,0
+x-ai/grok-4.6,problem_product_market_fit,6,6,4,0.5,Andreessen Horowitz,Sequoia Capital,0
+x-ai/grok-4.6,problem_raise_or_profit,4,6,1,0.1111,Y Combinator,SaaStr,0
+x-ai/grok-4.6,problem_replace_executive,3,4,1,0.1667,Andreessen Horowitz,Andreessen Horowitz,1
+x-ai/grok-4.6,problem_should_raise_vc,5,6,1,0.1,Y Combinator,Andreessen Horowitz,0

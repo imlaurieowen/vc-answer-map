@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="610" viewBox="0 0 1280 610">
+<rect width="100%" height="100%" fill="#111315"/>
+<style>
+text { font-family: Inter, Arial, sans-serif; fill: #F4F0E6; }
+.title { font-size: 34px; font-weight: 700; } .sub { font-size: 17px; fill: #A5A7A9; }
+.big { font-size: 76px; font-weight: 750; } .label { font-size: 18px; }
+.small { font-size: 14px; fill: #A5A7A9; } .firm { font-size: 15px; font-weight: 650; }
+</style><text x="60" y="68" class="title">Specificity removes prestige faster than it finds the expected specialist</text>
+<text x="60" y="104" class="sub">Share of all firm recommendations at each legitimate founder-detail level</text>
+<text x="60" y="185" class="label">Empirical prestige pool</text>
+<text x="305" y="310" class="small">Level 1</text>
+<text x="635" y="310" class="small">Level 2</text>
+<text x="965" y="310" class="small">Level 3</text>
+<polyline points="340,228.5 670,271.0 1000,270.5" fill="none" stroke="#C7F36B" stroke-width="5"/>
+<circle cx="340" cy="228.5" r="8" fill="#C7F36B"/>
+<text x="354" y="234.5" class="firm">17.9%</text>
+<circle cx="670" cy="271.0" r="8" fill="#C7F36B"/>
+<text x="684" y="277.0" class="firm">1.5%</text>
+<circle cx="1000" cy="270.5" r="8" fill="#C7F36B"/>
+<text x="1014" y="276.5" class="firm">1.7%</text>
+<polyline points="340,269.8 670,275.0 1000,275.0" fill="none" stroke="#78A9FF" stroke-width="5"/>
+<circle cx="340" cy="269.8" r="8" fill="#78A9FF"/>
+<text x="354" y="275.8" class="firm">2.0%</text>
+<circle cx="670" cy="275.0" r="8" fill="#78A9FF"/>
+<text x="684" y="281.0" class="firm">0.0%</text>
+<circle cx="1000" cy="275.0" r="8" fill="#78A9FF"/>
+<text x="1014" y="281.0" class="firm">0.0%</text>
+<text x="60" y="385" class="label">Frozen category-association pool</text>
+<text x="305" y="510" class="small">Level 1</text>
+<text x="635" y="510" class="small">Level 2</text>
+<text x="965" y="510" class="small">Level 3</text>
+<polyline points="340,383.3 670,412.1 1000,398.5" fill="none" stroke="#C7F36B" stroke-width="5"/>
+<circle cx="340" cy="383.3" r="8" fill="#C7F36B"/>
+<text x="354" y="389.3" class="firm">35.3%</text>
+<circle cx="670" cy="412.1" r="8" fill="#C7F36B"/>
+<text x="684" y="418.1" class="firm">24.2%</text>
+<circle cx="1000" cy="398.5" r="8" fill="#C7F36B"/>
+<text x="1014" y="404.5" class="firm">29.4%</text>
+<polyline points="340,446.6 670,464.2 1000,462.6" fill="none" stroke="#78A9FF" stroke-width="5"/>
+<circle cx="340" cy="446.6" r="8" fill="#78A9FF"/>
+<text x="354" y="452.6" class="firm">10.9%</text>
+<circle cx="670" cy="464.2" r="8" fill="#78A9FF"/>
+<text x="684" y="470.2" class="firm">4.2%</text>
+<circle cx="1000" cy="462.6" r="8" fill="#78A9FF"/>
+<text x="1014" y="468.6" class="firm">4.8%</text>
+<rect x="820" y="558" width="18" height="5" fill="#C7F36B"/><text x="848" y="566" class="small">Closed-book</text>
+<rect x="990" y="558" width="18" height="5" fill="#78A9FF"/><text x="1018" y="566" class="small">Common retriever</text>
+<text x="60" y="566" class="small">Target association is a preregistered proxy, not a quality score.</text></svg>

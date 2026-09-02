@@ -20,13 +20,16 @@ VC Answer Map measures model associations. It does not rank investment performan
 
 ## Status
 
-`v0.1-prebaseline`
+`v0.2-baseline-candidate`
 
-The methodology and prompt universe are being recorded before the first complete baseline is analysed. Results will only be published after source checking and a documented review.
+The 2,000-response pre-publication baseline is complete. Reviewed aggregate results and publication figures are available in this repository. The independent second review is documented; native-product spot checks remain a clearly separated release gate.
 
 ## Read first
 
 - [METHODOLOGY.md](METHODOLOGY.md): full research protocol
+- [RESULTS.md](RESULTS.md): September 2026 baseline findings
+- [data/README.md](data/README.md): field definitions and reproducibility boundary
+- [docs/REVIEW.md](docs/REVIEW.md): automated and independent review record
 - [AGENTS.md](AGENTS.md): rules for humans and coding agents working in this repository
 - [LIMITATIONS.md](LIMITATIONS.md): what the study can and cannot establish
 - [CORRECTIONS.md](CORRECTIONS.md): how firms can submit factual corrections

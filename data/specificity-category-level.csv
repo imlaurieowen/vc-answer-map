@@ -1,0 +1,31 @@
+condition,category,specificity_level,recommendations,unique_firms,prestige_share,target_share,top_firms,top5_inclusion_share
+closed_book,capital_efficient_saas,1,119,26,0.2773,0.1092,Bessemer Venture Partners (20/24) | Point Nine Capital (13/24) | Insight Partners (12/24) | Emergence Capital (11/24) | Battery Ventures (7/24),0.525
+closed_book,capital_efficient_saas,2,115,31,0.0261,0.1826,Point Nine Capital (21/24) | Notion Capital (15/24) | Seedcamp (15/24) | Crane Venture Partners (8/24) | Creandum (7/24),0.55
+closed_book,capital_efficient_saas,3,113,31,0.0,0.2832,Point Nine Capital (23/24) | Notion Capital (13/24) | Speedinvest (12/24) | Calm Company Fund (6/24) | Seedcamp (6/24),0.5
+closed_book,climate_hardware,1,117,20,0.0,0.8462,Lowercarbon Capital (24/24) | Congruent Ventures (21/24) | Breakthrough Energy Ventures (20/24) | Energy Impact Partners (15/24) | Prelude Ventures (10/24),0.75
+closed_book,climate_hardware,2,117,28,0.0,0.1026,Pale Blue Dot (17/24) | Extantia Capital (16/24) | Planet A Ventures (12/24) | World Fund (10/24) | Contrarian Ventures (8/24),0.525
+closed_book,climate_hardware,3,117,26,0.0,0.265,Breakthrough Energy Ventures (15/24) | Extantia Capital (14/24) | 2150 (12/24) | World Fund (12/24) | Lowercarbon Capital (11/24),0.5333
+closed_book,defence_technology,1,118,17,0.3305,0.0085,Lux Capital (22/24) | Founders Fund (20/24) | Shield Capital (20/24) | Andreessen Horowitz (17/24) | In-Q-Tel (12/24),0.7583
+closed_book,defence_technology,2,117,43,0.0,0.3504,NATO Innovation Fund (15/24) | Vsquared Ventures (10/24) | Project A Ventures (9/24) | MD One Ventures (7/24) | OTB Ventures (6/24),0.3917
+closed_book,defence_technology,3,117,44,0.0,0.3333,NATO Innovation Fund (15/24) | Vsquared Ventures (10/24) | MD One Ventures (8/24) | OTB Ventures (7/24) | Project A Ventures (6/24),0.3833
+closed_book,developer_infrastructure,1,117,26,0.2308,0.4786,Heavybit (18/24) | Amplify Partners (17/24) | Bessemer Venture Partners (11/24) | Redpoint Ventures (10/24) | Index Ventures (7/24),0.525
+closed_book,developer_infrastructure,2,117,29,0.0513,0.0855,Point Nine Capital (18/24) | Crane Venture Partners (11/24) | Seedcamp (10/24) | Speedinvest (10/24) | Notion Capital (8/24),0.475
+closed_book,developer_infrastructure,3,117,23,0.0855,0.0855,Point Nine Capital (17/24) | Crane Venture Partners (12/24) | OSS Capital (10/24) | Accel (9/24) | Index Ventures (9/24),0.475
+closed_book,university_spinout,1,110,36,0.0455,0.3273,Cambridge Innovation Capital (17/24) | Osage University Partners (13/24) | IP Group (9/24) | Oxford Science Enterprises (6/24) | Lux Capital (5/24),0.4167
+closed_book,university_spinout,2,117,30,0.0,0.4872,Cambridge Innovation Capital (17/24) | Parkwalk Advisors (15/24) | IP Group (11/24) | IQ Capital (10/24) | Oxford Science Enterprises (9/24),0.5167
+closed_book,university_spinout,3,117,28,0.0,0.5043,Cambridge Innovation Capital (22/24) | Parkwalk Advisors (15/24) | IQ Capital (14/24) | Amadeus Capital Partners (9/24) | Octopus Ventures (8/24),0.5667
+open_book,capital_efficient_saas,1,120,8,0.0,0.1667,Bonfire Ventures (24/24) | Sorenson Capital (24/24) | Vendep Capital (23/24) | Point Nine Capital (20/24) | Knoll Ventures (16/24),0.8917
+open_book,capital_efficient_saas,2,120,11,0.0,0.2083,OpenOcean (24/24) | Point Nine Capital (24/24) | Vendep Capital (24/24) | Samaipata (16/24) | DIG Ventures (15/24),0.8583
+open_book,capital_efficient_saas,3,112,10,0.0,0.0536,F-LOG Ventures (24/24) | Flying Founders (24/24) | Prequel Ventures (24/24) | XPRESS Ventures (24/24) | Point Nine Capital (6/24),0.85
+open_book,climate_hardware,1,120,10,0.0,0.0,Lichen Ventures (23/24) | Extantia Capital (21/24) | Zero Carbon (18/24) | Anthropocene Ventures (11/24) | Systemiq Capital (11/24),0.7
+open_book,climate_hardware,2,120,15,0.0,0.0,Montis VC (23/24) | Extantia Capital (16/24) | Zero Carbon (16/24) | AENU (15/24) | Matterwave Ventures (13/24),0.6917
+open_book,climate_hardware,3,120,14,0.0,0.0,Axeleo Capital (19/24) | Extantia Capital (18/24) | Marvelous Ventures (16/24) | Zero Carbon (13/24) | Montis VC (11/24),0.6417
+open_book,defence_technology,1,120,11,0.0,0.0083,Archangel (24/24) | OMVP (23/24) | Keen Venture Partners (22/24) | Helantic (21/24) | Edge.40 (9/24),0.825
+open_book,defence_technology,2,120,9,0.0,0.0,Gungnir Capital (24/24) | Archangel (23/24) | Keen Venture Partners (21/24) | OMVP (19/24) | DTIF (16/24),0.8583
+open_book,defence_technology,3,120,8,0.0,0.1833,Verne Capital (24/24) | OMVP (23/24) | NATO Innovation Fund (22/24) | Felsen Ventures (20/24) | Keen Venture Partners (20/24),0.9083
+open_book,developer_infrastructure,1,117,10,0.094,0.3761,Heavybit (24/24) | Varion Ventures (24/24) | Schema Ventures (23/24) | Boldstart Ventures (20/24) | Andreessen Horowitz (11/24),0.85
+open_book,developer_infrastructure,2,120,8,0.0,0.0,>commit (24/24) | OpenOcean (24/24) | Varion Ventures (24/24) | Deep (22/24) | backtrace (19/24),0.9417
+open_book,developer_infrastructure,3,115,12,0.0,0.0,Deep (24/24) | OpenOcean (24/24) | Varion Ventures (24/24) | Oxx (18/24) | Point Nine Capital (12/24),0.85
+open_book,university_spinout,1,119,21,0.0084,0.0,SOSV (23/24) | Civilization Ventures (20/24) | Ruya Ventures (20/24) | MassVentures (16/24) | Recode Ventures (9/24),0.7333
+open_book,university_spinout,2,120,13,0.0,0.0,Empirical Ventures (23/24) | SCVC (22/24) | OTIF Ventures (20/24) | Longwall Ventures (17/24) | AlbionVC (15/24),0.8083
+open_book,university_spinout,3,120,11,0.0,0.0,Cloudberry VC (24/24) | PhotonVentures (24/24) | OTIF Ventures (22/24) | SCVC (20/24) | Empirical Ventures (17/24),0.8917
