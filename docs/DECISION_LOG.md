@@ -95,3 +95,10 @@ Next action: run the specificity ladder only after validating the controlled ope
 - Added a post-hoc diagnostic for source-domain frequency, model-family coverage and cross-model recommendation overlap.
 - Labelled this analysis exploratory because it was motivated by visible partial results.
 - Made no change to prompts, models, collection settings or preregistered measures.
+
+## 2026-09-02: exploratory retrieved-source quality audit
+
+- While reviewing partial open-book citations, found a mix of specific current firm pages and pages containing duplicated, contradictory or template-like material.
+- Froze a post-hoc audit of the five most-mentioned firms in each open-book discovery prompt.
+- Required current primary-source checks for entity status, stage, geography and category fit, plus documented warning signs.
+- Kept this source-quality judgment separate from quantitative inclusion and citation measures.

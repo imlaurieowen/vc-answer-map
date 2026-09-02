@@ -264,6 +264,12 @@ After reviewing partial open-book output, the researchers added an exploratory d
 
 This measure was added after some open-book results were visible. It is post-hoc, is labelled exploratory in every result, and is not evidence for a preregistered hypothesis. It does not change the frozen prompts, response collection or preregistered measures.
 
+### 11.11 Retrieved-source quality audit (exploratory)
+
+The five most-mentioned firms in each of the ten open-book discovery prompts are reviewed after collection, producing no more than 50 firm-prompt pairs before deduplication. Reviewers check the current primary site for stage, geography and category fit; whether the named entity appears to be an operating investment firm; and visible warning signs such as contradictory claims, placeholder copy or absent team and portfolio evidence.
+
+Each pair is coded `verified`, `qualified`, `unverified` or `needs manual review`, with a source URL, access date and note. A polished or frequently retrieved page is never sufficient on its own to establish investment performance or founder suitability. This audit was motivated by partial results and is explicitly post-hoc.
+
 ## 12. Human verification
 
 Model output is evidence of model behaviour. It is not evidence that a factual claim about a venture firm is true.
