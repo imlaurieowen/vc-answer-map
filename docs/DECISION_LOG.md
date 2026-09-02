@@ -77,5 +77,6 @@ Next action: freeze the open-book execution configuration, run a 2-call search s
 - Level 3 adds a subsector, company state and investor-relevant operating constraints.
 - The experiment will measure unique-firm count, specialist inclusion, concentration and prestige leakage at each level.
 - Before collecting specificity results, operationalised prestige leakage from baseline category breadth and separated a reproducible target-association proxy from primary-source-verified specialist status. This prevents post-result hand-selection of a prestige or specialist list.
+- Reconciled the measures section with that operational definition: rationale quality remains a separate human-coded judgment rather than being folded into the prestige-leakage rate.
 
 Next action: run the specificity ladder only after validating the controlled open-book comparison and its remaining budget.

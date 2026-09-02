@@ -235,7 +235,7 @@ The degree to which the explanation provides verifiable reasons connected to the
 
 ### 11.7 Prestige leakage
 
-The appearance of a prominent generalist accompanied by reasons that are generic, weakly related or unsupported for the requested category.
+The share of non-empty recommendations belonging to the empirically defined baseline prestige pool in Section 7.3. Whether the accompanying rationale is generic, weakly related or unsupported is a separate human-coded judgment and is not part of this quantitative rate.
 
 ### 11.8 Attribution fidelity
 
