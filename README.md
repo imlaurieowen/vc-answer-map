@@ -2,6 +2,8 @@
 
 An open benchmark of which venture capital firms AI models recommend for specific founders, investment categories and operating problems.
 
+// By www.refinerymedia.co.uk
+
 The project asks a narrow question:
 
 > When a founder describes what they are building or the problem they have, which venture firms does an AI model reach for, and why?
