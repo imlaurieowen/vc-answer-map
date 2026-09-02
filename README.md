@@ -30,6 +30,7 @@ The methodology and prompt universe are being recorded before the first complete
 - [AGENTS.md](AGENTS.md): rules for humans and coding agents working in this repository
 - [LIMITATIONS.md](LIMITATIONS.md): what the study can and cannot establish
 - [CORRECTIONS.md](CORRECTIONS.md): how firms can submit factual corrections
+- [docs/FIRM_SELF_AUDIT.md](docs/FIRM_SELF_AUDIT.md): a practical accuracy and visibility audit for venture firms
 
 ## Repository boundary
 
