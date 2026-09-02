@@ -151,6 +151,15 @@ A separate prompt-sensitivity experiment tests when smaller or specialist firms 
 
 The experiment measures whether increasing legitimate founder specificity changes firm concentration, specialist inclusion and prestige leakage. The wording is frozen before results are collected.
 
+These outcomes are operationalised before collection as follows:
+
+- **Concentration:** the share of firm recommendations captured by the five most-mentioned firms at each specificity level.
+- **Prestige leakage:** the share captured by the baseline prestige pool. The pool contains every non-empty firm appearing in at least four of the ten closed-book discovery categories: Andreessen Horowitz, Battery Ventures, Bessemer Venture Partners, Index Ventures and Lux Capital. This is an empirical breadth rule, not an editorial list of famous firms.
+- **Target association:** inclusion of a non-prestige firm that appeared in at least ten of the 40 baseline responses for the corresponding discovery category and achieved its own highest baseline inclusion count in that category. This reproducible screen is a proxy for category association, not proof that a firm is genuinely specialist.
+- **Verified specialist inclusion:** inclusion of a firm whose current stage, geography and category fit is confirmed from a primary source under the verification protocol below. This is reported separately from the mechanical target-association measure.
+
+The five ladder categories map to the baseline discovery prompts for climate hardware, European defence, European university spinouts, developer infrastructure and capital-efficient SaaS. Ties in a firm's highest category count qualify. Firms with blank names are excluded from every rate.
+
 ## 8. Standard response instruction
 
 Discovery prompts request no more than five firms and require a specific reason for each inclusion. Models are instructed to avoid famous generalists when they lack a concrete connection to the founder's situation.
