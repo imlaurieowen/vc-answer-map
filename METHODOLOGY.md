@@ -135,9 +135,21 @@ Tools and live web search are disabled. The system instruction tells the model t
 
 ### 7.2 Open-book baseline
 
-Live search is enabled and citations are requested. This condition measures current discoverability through the tested product or API configuration.
+Live search is enabled and citations are requested. The controlled open-book comparison uses the same Exa retrieval engine, result limit and search instruction across all 8 model families. This isolates differences in model selection and synthesis while holding the retrieval layer approximately constant. It does not reproduce the native consumer experience of ChatGPT, Claude, Gemini or other products.
+
+The open-book comparison contains 3 responses per model-prompt cell, producing 480 planned responses across the frozen 20-prompt panel.
 
 Closed-book and open-book findings must not be combined into a single visibility statistic.
+
+### 7.3 Specificity ladder
+
+A separate prompt-sensitivity experiment tests when smaller or specialist firms enter the answer. Each ladder holds the underlying founder category constant while adding relevant coordinates:
+
+1. Broad category
+2. Category plus stage, geography and business model
+3. Category plus stage, geography, business model, capital profile and a specific operating constraint
+
+The experiment measures whether increasing legitimate founder specificity changes firm concentration, specialist inclusion and prestige leakage. The wording is frozen before results are collected.
 
 ## 8. Standard response instruction
 

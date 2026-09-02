@@ -47,3 +47,15 @@ Next action: tag `baseline-v0.1b` and launch a clean 160-response baseline.
 - Kept execution sequential to reduce provider rate-limit and concurrency effects.
 
 Next action: freeze the replication configuration and launch runs 2–5 as a separate checkpointed dataset.
+
+## 2026-09-02: open-book and specificity experiments
+
+- Completed 800 closed-book responses with 5 observations in all 160 model-prompt cells.
+- Observed sufficient first-position stability to stop general closed-book replication at 5 runs.
+- Pre-registered a controlled open-book comparison using a common Exa retrieval layer across all model families.
+- Planned 3 open-book observations per model-prompt cell, producing 480 responses.
+- Separated this controlled retrieval benchmark from future tests of native consumer products.
+- Added a specificity-ladder design to test when smaller or specialist firms enter recommendations.
+- Preserved the remaining budget for retrieval and prompt-sensitivity evidence rather than further general repetition.
+
+Next action: freeze the open-book execution configuration, run a 2-call search smoke test and launch the 480-response comparison if validation passes.
