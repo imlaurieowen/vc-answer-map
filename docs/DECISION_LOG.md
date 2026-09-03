@@ -112,4 +112,4 @@ Next action: run the specificity ladder only after validating the controlled ope
 - Described manual-review cases as observable diligence warnings, not findings of illegitimacy.
 - Retained the negative specificity result: more detail reduced empirical prestige leakage but did not monotonically increase the preregistered category-target share.
 - Produced SVG and high-resolution PNG figures plus a publication draft.
-- Completed an independent model review, logged accepted and rejected recommendations, and retained native-product spot checks as the explicit remaining gate.
+- Completed a separate consistency review against the evidence pack, logged accepted and rejected recommendations, and retained native-product spot checks as the explicit remaining gate.

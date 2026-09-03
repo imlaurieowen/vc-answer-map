@@ -31,8 +31,8 @@ The 2,000-response pre-publication baseline is complete. Reviewed aggregate resu
 - [METHODOLOGY.md](METHODOLOGY.md): full research protocol
 - [RESULTS.md](RESULTS.md): September 2026 baseline findings
 - [data/README.md](data/README.md): field definitions and reproducibility boundary
-- [docs/REVIEW.md](docs/REVIEW.md): automated and independent review record
-- [AGENTS.md](AGENTS.md): rules for humans and coding agents working in this repository
+- [docs/REVIEW.md](docs/REVIEW.md): release checks and editorial review record
+- [CONTEXT.md](CONTEXT.md): project boundaries and research standards
 - [LIMITATIONS.md](LIMITATIONS.md): what the study can and cannot establish
 - [CORRECTIONS.md](CORRECTIONS.md): how firms can submit factual corrections
 - [docs/FIRM_SELF_AUDIT.md](docs/FIRM_SELF_AUDIT.md): a practical accuracy and visibility audit for venture firms
