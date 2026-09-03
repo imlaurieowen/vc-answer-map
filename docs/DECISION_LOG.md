@@ -113,3 +113,11 @@ Next action: run the specificity ladder only after validating the controlled ope
 - Retained the negative specificity result: more detail reduced empirical prestige leakage but did not monotonically increase the preregistered category-target share.
 - Produced SVG and high-resolution PNG figures plus a publication draft.
 - Completed a separate consistency review against the evidence pack, logged accepted and rejected recommendations, and retained native-product spot checks as the explicit remaining gate.
+
+## 2026-09-03: Calm Company Fund status correction
+
+- Preserved the observed retrieval result: Calm Company Fund appeared in all 24 shared-retrieval answers for the capital-efficient SaaS prompt and ranked first in 23.
+- Replaced the initial “current availability unresolved” note after reviewing Tyler Tringas’s December 2024 primary-source update.
+- Recorded that Calm had paused new investing and would not return in its previous early-stage fund form; Fund IV capital had been returned.
+- Kept the audit classification `qualified`, because the entity and historical thesis are real, while explicitly marking it as not an active early-stage funding recommendation at the benchmark date.
+- No model output, recommendation count or aggregate metric was altered.
