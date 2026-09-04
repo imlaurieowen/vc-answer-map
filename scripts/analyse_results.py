@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
+import argparse
 import csv
 import json
+import os
 import re
 import statistics
 from collections import Counter, defaultdict
@@ -8,8 +10,7 @@ from itertools import combinations
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-OUTPUT = ROOT / "analysis"
-OUTPUT.mkdir(exist_ok=True)
+DEFAULT_INPUTS = ("results-full.jsonl", "results-replicate.jsonl")
 
 FIRM_ALIASES = {
     "a16z": "Andreessen Horowitz",
@@ -129,15 +130,44 @@ def write_csv(path, fields, rows):
         writer.writeheader()
         writer.writerows(rows)
 
-def load_rows():
+def fields_of(rows):
+    return list(rows[0]) if rows else []
+
+def resolve_path(name):
+    path = Path(name).expanduser()
+    return path if path.is_absolute() else ROOT / path
+
+
+def resolve_inputs(cli_inputs):
+    if cli_inputs:
+        names = cli_inputs
+    else:
+        env = os.environ.get("VC_ANSWER_MAP_INPUT", "").strip()
+        names = [part for part in re.split(r"[:,]", env) if part.strip()] if env else list(DEFAULT_INPUTS)
+    return [resolve_path(name) for name in names]
+
+
+def resolve_output(cli_output):
+    target = cli_output or os.environ.get("VC_ANSWER_MAP_OUTPUT") or (ROOT / "analysis")
+    output = resolve_path(target)
+    output.mkdir(parents=True, exist_ok=True)
+    return output
+
+
+def load_rows(paths):
     rows = []
-    for name in ("results-full.jsonl", "results-replicate.jsonl"):
-        for line in (ROOT / name).read_text().splitlines():
-            rows.append(json.loads(line))
+    for path in paths:
+        if not path.exists():
+            raise SystemExit(f"Input file not found: {path}")
+        for line in path.read_text().splitlines():
+            line = line.strip()
+            if line:
+                rows.append(json.loads(line))
     return rows
 
-def main():
-    responses = load_rows()
+def main(inputs=None, output=None):
+    output = resolve_output(output)
+    responses = load_rows(resolve_inputs(inputs))
     flat = []
     for response in responses:
         for rank, rec in enumerate(response["parsed"].get("recommendations", []), 1):
@@ -157,8 +187,8 @@ def main():
                 "source_url": (rec.get("source_url") or "").strip(),
                 "confidence": rec.get("confidence", ""),
             })
-    flat_fields = list(flat[0])
-    write_csv(OUTPUT / "recommendations-normalised.csv", flat_fields, flat)
+    flat_fields = fields_of(flat)
+    write_csv(output /"recommendations-normalised.csv", flat_fields, flat)
 
     total_responses = len(responses)
     firm_rows = []
@@ -177,7 +207,7 @@ def main():
             "mean_rank": round(statistics.mean(r["rank"] for r in mentions), 3),
         })
     firm_rows.sort(key=lambda r: (-r["response_inclusions"], r["mean_rank"], r["firm"]))
-    write_csv(OUTPUT / "firms-overall.csv", list(firm_rows[0]), firm_rows)
+    write_csv(output /"firms-overall.csv", fields_of(firm_rows), firm_rows)
 
     by_prompt = []
     prompt_ids = sorted({r["prompt_id"] for r in responses})
@@ -202,7 +232,7 @@ def main():
                 "mean_rank": round(statistics.mean(r["rank"] for r in mentions), 3),
             })
     by_prompt.sort(key=lambda r: (r["prompt_id"], -r["response_inclusions"], r["mean_rank"], r["firm"]))
-    write_csv(OUTPUT / "firms-by-prompt.csv", list(by_prompt[0]), by_prompt)
+    write_csv(output /"firms-by-prompt.csv", fields_of(by_prompt), by_prompt)
 
     response_sets = {}
     response_tops = {}
@@ -211,10 +241,14 @@ def main():
         recs = response["parsed"].get("recommendations", [])
         response_sets[rkey] = {canonical_firm(r.get("firm")) for r in recs if canonical_firm(r.get("firm"))}
         response_tops[rkey] = canonical_firm(recs[0].get("firm")) if recs else ""
+    runs_by_cell = defaultdict(set)
+    for response in responses:
+        runs_by_cell[(response["model"], response["prompt_id"])].add(response["run"])
     stability = []
     for model, prompt_id in sorted({(r["model"], r["prompt_id"]) for r in responses}):
-        sets = [response_sets[(model, prompt_id, run)] for run in range(1, 6)]
-        tops = [response_tops[(model, prompt_id, run)] for run in range(1, 6)]
+        runs = sorted(runs_by_cell[(model, prompt_id)])
+        sets = [response_sets[(model, prompt_id, run)] for run in runs]
+        tops = [response_tops[(model, prompt_id, run)] for run in runs]
         similarities = []
         for left, right in combinations(sets, 2):
             similarities.append(len(left & right) / len(left | right) if left | right else 1.0)
@@ -222,12 +256,13 @@ def main():
         stability.append({
             "model": model,
             "prompt_id": prompt_id,
-            "mean_pairwise_jaccard": round(statistics.mean(similarities), 4),
-            "top1_modal_firm": top_counts.most_common(1)[0][0],
-            "top1_agreement": round(top_counts.most_common(1)[0][1] / 5, 2),
-            "distinct_firms_across_runs": len(set().union(*sets)),
+            "observed_runs": len(runs),
+            "mean_pairwise_jaccard": round(statistics.mean(similarities), 4) if similarities else None,
+            "top1_modal_firm": top_counts.most_common(1)[0][0] if top_counts else "",
+            "top1_agreement": round(top_counts.most_common(1)[0][1] / len(tops), 2) if tops else None,
+            "distinct_firms_across_runs": len(set().union(*sets)) if sets else 0,
         })
-    write_csv(OUTPUT / "cell-stability.csv", list(stability[0]), stability)
+    write_csv(output /"cell-stability.csv", fields_of(stability), stability)
 
     model_rows = []
     for model in sorted({r["model"] for r in responses}):
@@ -236,16 +271,18 @@ def main():
         model_stability = [r for r in stability if r["model"] == model]
         counts = Counter(r["firm"] for r in model_flat)
         total = sum(counts.values())
+        cell_jaccards = [r["mean_pairwise_jaccard"] for r in model_stability if r["mean_pairwise_jaccard"] is not None]
+        cell_top1 = [r["top1_agreement"] for r in model_stability if r["top1_agreement"] is not None]
         model_rows.append({
             "model": model,
             "responses": len(model_responses),
             "firm_recommendations": total,
             "unique_firms": len(counts),
-            "top5_mention_share": round(sum(n for _, n in counts.most_common(5)) / total, 4),
-            "mean_cell_jaccard": round(statistics.mean(r["mean_pairwise_jaccard"] for r in model_stability), 4),
-            "mean_top1_agreement": round(statistics.mean(r["top1_agreement"] for r in model_stability), 4),
+            "top5_mention_share": round(sum(n for _, n in counts.most_common(5)) / total, 4) if total else None,
+            "mean_cell_jaccard": round(statistics.mean(cell_jaccards), 4) if cell_jaccards else None,
+            "mean_top1_agreement": round(statistics.mean(cell_top1), 4) if cell_top1 else None,
         })
-    write_csv(OUTPUT / "models.csv", list(model_rows[0]), model_rows)
+    write_csv(output /"models.csv", fields_of(model_rows), model_rows)
 
     framework_rows = []
     for framework in sorted({r["framework"] for r in flat if r["framework"]}):
@@ -259,7 +296,7 @@ def main():
             "individuals": " | ".join(name for name, _ in Counter(r["individual"] for r in mentions if r["individual"]).most_common(5)),
         })
     framework_rows.sort(key=lambda r: (-r["mentions"], r["framework"]))
-    write_csv(OUTPUT / "frameworks.csv", list(framework_rows[0]), framework_rows)
+    write_csv(output /"frameworks.csv", fields_of(framework_rows), framework_rows)
 
     verification = []
     grouped_prompt = defaultdict(list)
@@ -292,21 +329,48 @@ def main():
             "accessed_date": "",
             "notes": "",
         })
-    write_csv(OUTPUT / "verification-queue.csv", list(verification[0]), verification)
+    write_csv(output /"verification-queue.csv", fields_of(verification), verification)
 
+    cell_jaccards = [r["mean_pairwise_jaccard"] for r in stability if r["mean_pairwise_jaccard"] is not None]
+    cell_top1 = [r["top1_agreement"] for r in stability if r["top1_agreement"] is not None]
     summary = {
         "responses": len(responses),
         "recommendations": len(flat),
         "canonical_firms": len(firms),
         "framework_mentions": sum(bool(r["framework"]) for r in flat),
-        "mean_cell_jaccard": round(statistics.mean(r["mean_pairwise_jaccard"] for r in stability), 4),
-        "median_cell_jaccard": round(statistics.median(r["mean_pairwise_jaccard"] for r in stability), 4),
-        "mean_top1_agreement": round(statistics.mean(r["top1_agreement"] for r in stability), 4),
-        "stable_cells_jaccard_gte_0_6": sum(r["mean_pairwise_jaccard"] >= 0.6 for r in stability),
-        "unstable_cells_jaccard_lt_0_4": sum(r["mean_pairwise_jaccard"] < 0.4 for r in stability),
+        "comparable_cells": len(cell_jaccards),
+        "mean_cell_jaccard": round(statistics.mean(cell_jaccards), 4) if cell_jaccards else None,
+        "median_cell_jaccard": round(statistics.median(cell_jaccards), 4) if cell_jaccards else None,
+        "mean_top1_agreement": round(statistics.mean(cell_top1), 4) if cell_top1 else None,
+        "stable_cells_jaccard_gte_0_6": sum(1 for v in cell_jaccards if v >= 0.6),
+        "unstable_cells_jaccard_lt_0_4": sum(1 for v in cell_jaccards if v < 0.4),
     }
-    (OUTPUT / "summary.json").write_text(json.dumps(summary, indent=2) + "\n")
+    (output /"summary.json").write_text(json.dumps(summary, indent=2) + "\n")
     print(json.dumps(summary, indent=2))
 
+def parse_args():
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument(
+        "-i",
+        "--input",
+        action="append",
+        dest="inputs",
+        metavar="PATH",
+        help=(
+            "Raw response JSONL file (repeatable). "
+            "Defaults to VC_ANSWER_MAP_INPUT or "
+            f"{', '.join(DEFAULT_INPUTS)} relative to the repo root."
+        ),
+    )
+    parser.add_argument(
+        "-o",
+        "--output",
+        metavar="DIR",
+        help="Directory for aggregate outputs. Defaults to VC_ANSWER_MAP_OUTPUT or ./analysis.",
+    )
+    return parser.parse_args()
+
+
 if __name__ == "__main__":
-    main()
+    args = parse_args()
+    main(inputs=args.inputs, output=args.output)

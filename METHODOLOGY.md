@@ -1,7 +1,7 @@
 # VC Answer Map methodology
 
-Version: `0.1-prebaseline`  
-Status: pre-registered pilot protocol  
+Version: `v0.2-baseline-candidate`  
+Status: pre-registered protocol; 2,000-response baseline complete. Amendments after the `prebaseline-v0.1` freeze are logged in [docs/DECISION_LOG.md](docs/DECISION_LOG.md).  
 Owner: Refinery Media  
 First baseline: September 2026
 
